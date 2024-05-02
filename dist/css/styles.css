@@ -1,0 +1,406 @@
+/* Bramble Jams Treasure Box Displays CSS */
+
+/* General modal settings to ensure it appears correctly above other content */
+.modal-backdrop.show {
+  z-index: 1050; /* Ensures modal background is above other elements but below the modal itself */
+}
+
+.modal-backdrop.show {
+  z-index: 1040; /* Ensures that the modal backdrop is just below the modal */
+}
+
+#unique-signin-modal {
+  z-index: 1050; /* Ensures your specific modal is above most other content */
+}
+
+.modal-content {
+  z-index: 1051; /* Ensures modal content is above the modal itself and backdrop */
+}
+
+/* Enhancing button interactions with visual feedback */
+.btn-primary:hover {
+  background-color: #3391ff; /* Lighter shade of blue for a hover state */
+  opacity: 0.8; /* Slight transparency for a dynamic effect */
+  color: #ffffff; /* Ensures text remains white on hover for contrast */
+}
+
+.btn-outline-primary:hover {
+  background-color: #b8aed2; /* Changes background to soft purple on hover */
+  color: #ffffff; /* Changes text color to white for readability */
+}
+
+/* Styling for specific FontAwesome icons in list items */
+.li-lighting .fa {
+  color: #b8aed2; /* Assigns a soft purple color to lighting icons */
+}
+
+.li-glass .fa {
+  color: #a2c4c9; /* Teal color for glass feature icons */
+}
+
+.li-decor .fa {
+  color: #ffd700; /* Gold color to emphasize decor-related icons */
+}
+
+/* General icon styling within unordered lists */
+.list-unstyled .fa {
+  transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Subtle animation effects for interactive elements */
+.btn:hover {
+  transform: translateY(-2px); /* Lifts button slightly to indicate action */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
+}
+
+/* Background settings for feature sections */
+.bramble-features {
+  background-color: #f8f2f7; /* Light purple background for feature sections */
+}
+
+.bramble-box .text-primary {
+  color: #007bff; /* Ensures primary text matches the theme */
+}
+
+.bramble-box {
+  background-color: rgba(240, 240, 240, 0.85); /* Semi-transparent background for boxes */
+  border-radius: 0.5rem; /* Rounded corners for a soft look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Typography for feature titles and text */
+.feature-title {
+  font-family: "Poppins", sans-serif; /* Stylish, modern font for titles */
+  font-weight: bold; /* Bold weight for emphasis */
+}
+
+.feature-text {
+  font-family: "Lato", sans-serif; /* Highly readable font for descriptions */
+  color: #333; /* Dark grey for optimal readability */
+}
+
+/* Primary button base styles */
+.btn-primary {
+  background-color: #3391ff; /* Bright blue for primary actions */
+  border: none; /* No border for a cleaner look */
+}
+
+/* Banner styles for promotional or header sections */
+.reader-banner {
+  padding: 5rem 0; /* Ample vertical padding for focus */
+  color: #ffffff; /* White text for contrast */
+  text-align: center; /* Centered text for impact */
+  background-color: #673ab7; /* Deep purple background for thematic consistency */
+  background-size: cover; /* Background image covers the entire area */
+  background-position: center; /* Centers the background image */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow for texture */
+}
+
+.banner-title {
+  font-size: 2.5rem; /* Large font size for visibility */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #ffffff; /* Explicit white color for clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability against complex backgrounds */
+}
+
+/* Testimonials section for showcasing customer feedback */
+.testimonials-section {
+  background-color: transparent; /* Transparent background to allow underlying style to show through */
+}
+
+.testimonials-section h2 {
+  color: #007bff; /* Blue for heading to tie into theme */
+}
+
+.testimonials-section .row {
+  background-color: #f8f2f7; /* Light purple for a soft, neutral backdrop */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth and emphasis */
+}
+
+.testimonials-section .rounded-circle {
+  width: 150px; /* Fixed width for uniformity */
+  height: 150px; /* Fixed height to maintain aspect ratio */
+  object-fit: cover; /* Ensures images fill the circle */
+  border-radius: 50%; /* Fully rounded edges for circular images */
+}
+
+.testimonials-section .lead {
+  font-size: 1.1rem; /* Slightly larger font size for lead text */
+  color: #333; /* Dark gray for contrast and readability */
+}
+
+.testimonials-section .fw-bold {
+  font-weight: bold; /* Bold text for names to stand out */
+}
+
+/* Download section styles for promotional or informational downloads */
+.download img {
+  border-radius: 15px; /* Rounded edges for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for visual depth */
+  border: 2px solid #007bff; /* Blue border for thematic consistency */
+}
+
+.download .btn-primary {
+  background-color: #007bff; /* Consistent blue for primary buttons */
+  border-color: #0056b3; /* Darker blue for border to enhance visibility */
+}
+
+.download .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover for visual feedback */
+  opacity: 1; /* Full opacity to maintain color strength */
+}
+
+/* Modal adjustments to ensure they are visually accessible and appealing */
+.modal-body img {
+  border-radius: 15px; /* Rounded corners for images within modals */
+}
+
+.modal-dialog {
+  max-width: 95%; /* Max width to avoid overly large modals on big screens */
+  width: auto; /* Auto width for flexibility */
+  height: auto; /* Auto height to contain various content sizes */
+}
+
+.topbar {
+  align-items: center; /* Center alignment for items within the top bar */
+}
+
+.topbar form {
+  flex-grow: 1; /* Allows the search form to fill available space */
+  margin: 0 1rem; /* Horizontal margin for spacing */
+}
+
+.topbar input[type="search"] {
+  max-width: 300px; /* Restricts width of search input for aesthetic purposes */
+}
+
+.navbar-tool {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Vertical center alignment */
+  position: relative; /* Positioning context for child elements */
+}
+
+.navbar-tool-icon-box.bg-secondary.me-3 {
+  cursor: pointer; /* Indicates clickable items */
+}
+
+.navbar-tool-icon-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
+  border-radius: 50%; /* Circular shape */
+  padding: 8px; /* Padding for spacing */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center alignment vertically */
+  justify-content: center; /* Center alignment horizontally */
+  background-color: #b8aed2; /* Initial background color */
+}
+
+.navbar-tool-icon-box:hover {
+  transform: translateY(-3px); /* Slight upward movement on hover for effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background-color: #a080c2; /* Slightly darker background on hover for contrast */
+}
+
+.navbar-tool-icon {
+  color: white; /* White color for visibility against backgrounds */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.navbar-tool-label {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded shape for aesthetic */
+  padding: 2px 5px; /* Padding for content spacing */
+  font-size: 0.75rem; /* Small font size for subtlety */
+  position: absolute; /* Absolute positioning relative to parent */
+  top: -10px; /* Positioned above the icon */
+  right: -10px; /* Positioned to the right of the icon */
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+.navbar-tool-label:hover {
+  background-color: rgba(255, 255, 255, 1); /* Solid white on hover for emphasis */
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow {
+  border-bottom-color: #b8aed2; /* Tooltip arrow color to match theme */
+}
+
+.tooltip-inner {
+  background-color: #b8aed2; /* Tooltip background for consistency */
+  color: white; /* White text for readability */
+  padding: 5px 10px; /* Padding for content spacing */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  font-size: 0.85rem; /* Small font size for tool tips */
+}
+
+.gallery-container {
+  background-color: #b8aed2; /* Light purple background to match theme */
+  padding: 15px; /* Padding for content separation */
+  margin: auto; /* Centering within its container */
+  max-width: 1200px; /* Maximum width for containment */
+  border-radius: 10px; /* Rounded corners for a modern appearance */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.gallery-item {
+  display: block; /* Block display for full width usage */
+  position: relative; /* Relative positioning for absolute child elements */
+  overflow: hidden; /* Hides anything outside the boundaries */
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transitions for interactions */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Scales up slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Larger shadow for emphasis */
+}
+
+.gallery-item img {
+  width: 100%; /* Full width for responsiveness */
+  height: 100%; /* Full height to maintain aspect ratio */
+  object-fit: cover; /* Ensures image covers the entire element */
+  transition: opacity 0.3s ease; /* Fade effect for interactivity */
+}
+
+.gallery-item:hover img {
+  opacity: 0.8; /* Slight transparency on hover for focus on captions */
+}
+
+.gallery-item-caption {
+  position: absolute; /* Positions relative to parent */
+  bottom: 0; /* Anchored to the bottom */
+  left: 0; /* Flush against the left side */
+  right: 0; /* Flush against the right side */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for readability */
+  color: white; /* White text for high contrast */
+  text-align: center; /* Centers the text horizontally */
+  padding: 10px; /* Padding for text spacing */
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease-in-out; /* Smooth transition for showing and hiding */
+}
+
+.gallery-item:hover .gallery-item-caption {
+  display: block; /* Shows the caption on hover */
+}
+
+.gallery-item:focus-within {
+  outline: 4px solid #b8aed2; /* Focus outline to indicate keyboard navigation */
+  outline-offset: 4px; /* Spacing around the outline */
+}
+
+.gallery-item:focus-within .gallery-item-caption {
+  display: block; /* Ensures captions are shown when focused for accessibility */
+}
+
+.donation-section {
+  background-color: #f8f2f7; /* Consistent light purple for thematic alignment */
+  padding: 3em 0; /* Top and bottom padding for spacing */
+  border-radius: 10px; /* Rounded corners for modern styling */
+  margin: 2em auto; /* Centered in the viewport with vertical margin */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a layered effect */
+  max-width: 1200px; /* Maximum width for content alignment */
+}
+
+.donation-image {
+  width: 100%; /* Full width to be responsive */
+  height: auto; /* Auto height to maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for visual softness */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
+}
+
+.donation-header {
+  font-family: "Poppins", sans-serif; /* Consistent font family for branding */
+  font-size: 2.5em; /* Large font size for emphasis */
+  color: #3868b2; /* Blue color for thematic consistency */
+  margin-bottom: 1em; /* Margin below the header for separation */
+}
+
+.donation-text {
+  font-family: "Lato", sans-serif; /* Readable font for body text */
+  color: #4a4a4a; /* Dark grey for strong contrast */
+  font-size: 1.2em; /* Slightly larger font for readability */
+  margin-bottom: 2em; /* Space before list for visual separation */
+}
+
+.donation-list {
+  list-style: none; /* No default list styling */
+  padding: 0; /* No padding for clean alignment */
+  margin-bottom: 2em; /* Bottom margin for separation */
+}
+
+.donation-list li {
+  font-size: 1.2em; /* Uniform font size for list items */
+  margin-bottom: 0.5em; /* Space between list items */
+  line-height: 1.6; /* Line height for readability */
+}
+
+.donate-now {
+  background-color: #6c0f1a; /* Maroon for visual impact */
+  color: white; /* White text for contrast */
+  font-family: "Poppins", sans-serif; /* Consistent branding with font */
+  padding: 1em 2em; /* Padding for clickable area size */
+  border-radius: 5px; /* Rounded corners for button */
+  font-size: 1.2em; /* Font size for visibility */
+  display: inline-block; /* Allows for margin settings */
+  text-decoration: none; /* No underline to appear more button-like */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.donate-now:hover,
+.donate-now:focus {
+  background-color: #b8aed2; /* Lighter purple on hover for feedback */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover for emphasis */
+}
+
+  @media (max-width: 768px) {
+    .testimonials-section .lead {
+      font-size: 1rem; /* Smaller font size for tighter text */
+    }
+
+    /* Adjusting heading sizes */
+    .container-fluid h1,
+    .container-fluid h2 {
+      font-size: 1.5rem; /* Reduced to fit smaller screens better */
+    }
+
+    /* Reduce the vertical spacing for a tighter look */
+    .container-fluid .p-4 {
+      padding-top: 0.5rem; /* Smaller top padding */
+      padding-bottom: 0.5rem; /* Smaller bottom padding */
+    }
+
+    /* Ensure buttons stack vertically with minimal gap */
+    .container-fluid .d-flex {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2em; /* Reduced gap between stacked elements */
+    }
+
+    /* Adjust button sizes to better fit mobile screens */
+    .container-fluid .btn-lg {
+      width: 100%; /* Full width buttons on mobile */
+      text-align: center; /* Center text inside button */
+      display: block; /* Ensure button takes full width */
+      margin-top: 0.5em; /* Reduced top margin for closer spacing */
+      margin-bottom: 0.5em; /* Reduced bottom margin for closer spacing */
+    }
+
+    /* Margin correction for buttons to align properly */
+    .container-fluid a.btn {
+      margin-left: 0; /* Ensure no additional left margin */
+      margin-right: 0; /* Ensure no additional right margin */
+    }
+
+    /* Icon size adjustments */
+    .container-fluid .fas {
+      font-size: 0.9rem; /* Slightly smaller icons for a cleaner look */
+    }
+  }
+}
+@media (max-width: 992px) {
+  .bramble-features .col-md-6 {
+    order: -1; /* Brings the image to the top on smaller screens */
+  }
+}
